@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #github-link{  /*이렇게 굳이 할수는 있지만 사용하지 않음*/
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <header id="github-link">깃허브링크</header>
+
+    <a href="http://www.naver.com">네이버 링크</a>  
+    <a href="http://www.google.com" target="_blank">구글 링크</a>  
+
+    <a href="../2.컨텐츠태그/2.목록태그.html">목록태그 페이지</a>
+
+    <a href="tel:+8212341234">문의전화</a>
+    <a href="mailto:hoho@gmail.com">메일문의</a>
+
+    <!-- div#top>h1+p -->
+    <div id="top">
+        <h1>안녕하세요</h1>
+        <p style="height: 2000px;">
+            방가방가
+        </p>
+    </div>
+
+    <a href="#top">맨 위로 이동</a>
+
+
+    <script>
+        // a태그가 아니어도 이런 식으로 링크 걸 수 있지만 하지 않는게 좋음
+        const $spanLink = document.getElementById('github-link');
+
+        $spanLink.onclick = e => {
+            window.location.href = 'https://github.com';
+        }
+    </script>
+
+</body>
+</html>
