@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input{
+            /* height: 70px; inline block 성질임 */
+            display: inline-block;
+        }
+        button{
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- form은 서버로 연결해줌 method post 보안의목적도 있다, 
+        autocomplete 자동완성끔, novalidate는 검증 x -->
+    <form 
+     action="https://search.naver.com/search.naver"
+     method="GET" 
+     autocomplete="off"
+     novalidate
+     > 
+        
+         <!-- input에는 always name 이 있어야된다 -->
+
+        <input type="text" name="query">
+        <button>검색</button>
+
+    </form>
+
+</body>
+</html>
