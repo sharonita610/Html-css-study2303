@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .root {
+            width: 600px;
+            height: 500px;
+            border: 4px  dashed orange;
+            padding: 100px;
+            font-size: 30px;
+            /* position: static; 얘는 없는거라고 보면 됨. none 값임*/
+        }
+
+        .parent {
+            width: 400px;
+            height: 300px;
+            border: 4px dashed blue;
+            padding: 50px;
+            position: relative;
+            /* 
+                자식의 position 제한을 위해 필요 없어도 부모가 relative로 거는 경우가 많음 
+                기준이 부모일 뿐, 부모 안에서만 움직이는건 아님
+            */
+        }
+
+        .child {
+            width: 120px;
+            height: 80px;
+            border: 4px dashed red;
+            background: tomato;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 80px;
+
+        }
+
+        .abs {
+            /* 기준은 부모한테 position이 있는 순간 제한이 걸린다 */
+            position: absolute;
+            top: 50px;
+            right: 30px;
+        }
+
+        .parent a {
+            background: orange;
+            width: 100px;
+            height: 100px;
+            /*
+            inline 속성의 태그는 
+            position: absolute;
+            float: left;이 부여되면 
+            자동으로 block으로 변환된다
+            */
+            
+        }
+        /* 박스 좌우 상하 정중앙 배치 공식 */
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        /* 외워두면 좋다 */
+
+    </style>
+</head>
+<body>
+    
+    <!-- .root>.parent>.child{$}*3 -->
+    <div class="root">
+        <div class="parent ">
+            <div class="child ">1</div>
+            <div class="child center">2</div>
+            <div class="child">3</div>
+            <a href="#">444444</a>
+        </div>
+    </div>
+
+</body>
+</html>

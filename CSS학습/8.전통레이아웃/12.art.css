@@ -1,0 +1,23 @@
+
+
+body {
+    width: 800px;
+    height: fit-content;
+    border: 2px solid #000;
+    margin: 50px;
+}
+
+header h1{
+    height: 150px;
+    padding: 0 50px;
+    text-align: center;
+    background-color: rgb(251, 198, 23);
+    font-size: 4em;
+    color: white;
+}
+header h1 span {
+    font-size: 15px;
+}
+header h2{
+    background: blueviolet;
+}

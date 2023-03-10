@@ -1,0 +1,94 @@
+body {
+    width: 1000px;
+    height: auto;
+    background: rgb(115, 124, 128);
+    margin: auto;
+
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+#wrapper {
+    background-color: white;
+}
+
+header {
+    background: rgb(7, 49, 90);
+    height: 120px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+header h1 {
+    font-size: 1.7em;
+    color: rgb(248, 248, 37);
+    font-family: 'Black Han Sans';
+}
+
+header strong {
+    color: white;
+    font-size: 3.5em;
+}
+
+header span {
+    font-size: 1.7em;
+}
+
+header em {
+    color: white;
+    font-size: 2em;
+}
+
+.container {
+    font-size: 1.2em;
+    padding: 0;
+    list-style: none;
+}
+
+.container .menu {
+    width: 20%;
+    height: 680px;
+    color: #000;
+    background: rgb(194, 194, 191);
+    float: left;
+    padding: 30px;
+    line-height:2;
+
+
+}
+
+.container .content {
+    width: 74%;
+    float: right;
+}
+
+.content h2 {
+    height: 40px;
+    background: rgb(162, 26, 26);
+    color: yellow;
+    padding: 15px 30px 0;
+
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'Climate Crisis', cursive;
+}
+
+.content p{
+    padding: 30px;
+    font-size: 1em;
+    text-align: justify;
+    line-height:1.2;
+    font-family: '굴림체';
+}
+
+footer {
+    height: 35px;
+    font-size: 1em;
+    background: rgb(154, 153, 153);
+    padding: 20px 30px 0;
+}
